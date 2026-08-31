@@ -1,5 +1,7 @@
 # Unprocrastinator for Tampermonkey
 
+I took this idea from the [iOS Unprocrastinator](https://andadinosaur.com/launch-unprocrastinator) extension.
+
 ## How to use
 
 1. Open the site you want to delay.
@@ -13,8 +15,6 @@ Every visit to that site (and its subdomains) shows a 30-second wait screen with
 
 ## Install
 
-1. Install [Tampermonkey](https://www.tampermonkey.net/) or [Violentmonkey](https://violentmonkey.github.io/) in Chrome / Edge / Brave / Arc.
+1. Install [Tampermonkey](https://www.tampermonkey.net/) or [Violentmonkey](https://violentmonkey.github.io/) in any Chromium-based Browser.
 2. Open `unprocrastinator.user.js` — the manager will offer to install it. Or: Create a new script → paste the file → save.
 3. Allow the script on all sites (default, via `@match *://*/*`).
-
-Same idea as the [Safari Unprocrastinator](https://andadinosaur.com/launch-unprocrastinator) extension.
