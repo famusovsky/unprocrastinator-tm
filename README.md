@@ -1,20 +1,20 @@
 # Unprocrastinator for Tampermonkey
 
-Та же логика, что у [Safari-расширения Unprocrastinator](https://andadinosaur.com/launch-unprocrastinator): 30 секунд ожидания на выбранных сайтах, потом страница открывается. Задержка специально не настраивается.
+## How to use
 
-## Установка
+1. Open the site you want to delay.
+2. Tampermonkey / Violentmonkey menu → **Unprocrastinator: settings**.
+3. Turn on the toggle for the current domain.
 
-1. Поставь [Tampermonkey](https://www.tampermonkey.net/) в Chrome / Edge / Brave / Arc.
-2. Открой `unprocrastinator.user.js` в редакторе или в браузере — Tampermonkey предложит установить. Либо: иконка Tampermonkey → Create a new script → вставь содержимое файла → Ctrl/Cmd+S.
-3. В Tampermonkey для скрипта должен быть доступ ко всем сайтам (по умолчанию так и есть из‑за `@match *://*/*`).
+Every visit to that site (and its subdomains) shows a 30-second wait screen with **Go Back**. The delay is not configurable.
 
-## Как пользоваться
+- **Unprocrastinator: toggle this site** — enable or disable the current domain quickly.
+- The site list is stored locally (`GM_setValue`) and never sent anywhere.
 
-1. Зайди на сайт, который хочешь замедлить.
-2. Иконка Tampermonkey → **Unprocrastinator: settings**.
-3. Включи тоггл для текущего домена.
+## Install
 
-Дальше при каждом заходе на этот сайт (и его поддомены) будет экран ожидания и кнопка **Go Back**.
+1. Install [Tampermonkey](https://www.tampermonkey.net/) or [Violentmonkey](https://violentmonkey.github.io/) in Chrome / Edge / Brave / Arc.
+2. Open `unprocrastinator.user.js` — the manager will offer to install it. Or: Create a new script → paste the file → save.
+3. Allow the script on all sites (default, via `@match *://*/*`).
 
-- **Unprocrastinator: toggle this site** — быстро включить/выключить текущий домен.
-- Список сайтов хранится локально (`GM_setValue`), никуда не уходит.
+Same idea as the [Safari Unprocrastinator](https://andadinosaur.com/launch-unprocrastinator) extension.
